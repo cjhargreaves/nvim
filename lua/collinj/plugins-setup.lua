@@ -92,8 +92,14 @@ return packer.startup(function(use)
       ts_update()
     end,
   })
+  
+  -- autoclose tags
+  use({ "windwp/nvim-ts-autotag", after = "nvim-treesitter" }) 
+  
 
-  use({ "windwp/nvim-ts-autotag", after = "nvim-treesitter" }) -- autoclose tags
+
+  -- terminal toggle
+  use("akinsho/toggleterm.nvim")
   
   if packer_bootstrap then
     require("packer").sync()
