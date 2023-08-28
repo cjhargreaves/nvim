@@ -34,7 +34,12 @@ local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
 lspconfig["clangd"].setup({
   capabilities = capabilities,
-  on_attach = on_attach
+  on_attach = on_attach,
+  cmd = {
+    "clangd",
+    "--background-index",
+    "-I/opt/homebrew/Cellar/glfw/3.3.8",
+  }
 })
 
 lspconfig["jdtls"].setup({
