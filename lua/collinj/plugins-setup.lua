@@ -25,7 +25,7 @@ end
 
 return packer.startup(function(use)
   use("wbthomason/packer.nvim")
-  use("catppuccin/nvim")
+  use("scottmckendry/cyberdream.nvim")
   
   -- dependency plugin
   use("nvim-lua/plenary.nvim")
@@ -100,6 +100,20 @@ return packer.startup(function(use)
 
   -- terminal toggle
   use("akinsho/toggleterm.nvim")
+
+  use 'stevearc/dressing.nvim'
+  use 'MunifTanjim/nui.nvim'
+  use 'MeanderingProgrammer/render-markdown.nvim'
+
+  use {
+    'yetone/avante.nvim',
+    branch = 'main',
+    run = 'make',
+    config = function()
+      require('avante_lib').load()
+      require('avante').setup()
+    end
+  }
   
   if packer_bootstrap then
     require("packer").sync()

@@ -12,6 +12,8 @@ require("collinj.plugins.lsp.lspsaga")
 require("collinj.plugins.lsp.lspconfig")
 require("collinj.plugins.treesitter")
 require("collinj.plugins.toggleterm")
+require("collinj.plugins.avante")
+
 
 
 

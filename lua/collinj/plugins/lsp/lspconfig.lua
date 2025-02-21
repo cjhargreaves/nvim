@@ -38,7 +38,6 @@ lspconfig["clangd"].setup({
   cmd = {
     "clangd",
     "--background-index",
-    "-I/opt/homebrew/Cellar/glfw/3.3.8",
   }
 })
 

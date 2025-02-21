@@ -17,7 +17,8 @@ mason.setup()
 mason_lspconfig.setup({
   -- list of servers for mason to install
   ensure_installed = {
-    "tsserver",
+    "bashls",
+    "biome",
     "html",
     "cssls",
     "lua_ls",
