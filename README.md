@@ -2,7 +2,7 @@
 
 ### Requirements
 
-Nvim - version < 0.9.0 <br>
+Nvim - version < 0.10 <br>
 Nerdfonts - for dev icons <br>
 
 ### How to install
@@ -17,5 +17,7 @@ run nvim now and Sync packages <br>
 `:PackerSync` <br>
 
 nvim will sync all the plugins now and should immediately work. <br>
+
+added Avante support <br>
 
 
