@@ -43,11 +43,13 @@ lspconfig["clangd"].setup({
 
 lspconfig["jdtls"].setup({
   capabilities = capabilities,
-  on_attach = on_attach
+  on_attach = on_attach,
+  cmd = { "jdtls" },
+  root_dir = lspconfig.util.root_pattern(".git", "mvnw", "gradlew", "pom.xml", "build.gradle"),
 })
 
 lspconfig["pyright"].setup({
-  capabilites = capabilities,
+  capabilities = capabilities,
   on_attach = on_attach
 })
 

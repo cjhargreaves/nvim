@@ -17,13 +17,8 @@ mason.setup()
 mason_lspconfig.setup({
   -- list of servers for mason to install
   ensure_installed = {
-    "bashls",
-    "biome",
-    "html",
-    "cssls",
     "lua_ls",
     "clangd",
-    "pyright",
     "jdtls",
   },
   -- auto-install configured servers (with lspconfig)
