@@ -18,6 +18,3 @@ run nvim now and Sync packages <br>
 
 nvim will sync all the plugins now and should immediately work. <br>
 
-added Avante support <br>
-
-

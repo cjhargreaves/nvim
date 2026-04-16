@@ -24,11 +24,14 @@ if not status then
 end
 
 return packer.startup(function(use)
+
+  -- packer and colorscheme
   use("wbthomason/packer.nvim")
-  use("folke/tokyonight.nvim")
+  use("navarasu/onedark.nvim")
   
   -- dependency plugin
   use("nvim-lua/plenary.nvim")
+
   -- split window navigator
   use("christoomey/vim-tmux-navigator")
   use("szw/vim-maximizer") -- maximizes and restores windows
@@ -71,7 +74,8 @@ return packer.startup(function(use)
 
   -- configuring LSP servers
   use("neovim/nvim-lspconfig")
-    use("hrsh7th/cmp-nvim-lsp") -- for autocompletion
+  use("hrsh7th/cmp-nvim-lsp") -- for autocompletion
+
   use({
     "glepnir/lspsaga.nvim",
     branch = "main",
@@ -101,8 +105,19 @@ return packer.startup(function(use)
   -- terminal toggle
   use("akinsho/toggleterm.nvim")
 
-  use 'stevearc/dressing.nvim'
-  use 'MunifTanjim/nui.nvim'
+
+  -- avante
+  use({
+    "yetone/avante.nvim",
+    requires = {
+      "nvim-treesitter/nvim-treesitter",
+      "stevearc/dressing.nvim",
+      "nvim-lua/plenary.nvim",
+      "MunifTanjim/nui.nvim",
+    },
+    run = "make",  -- build native bits
+  })
+
   use 'MeanderingProgrammer/render-markdown.nvim'
 
 end)

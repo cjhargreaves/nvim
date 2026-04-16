@@ -94,6 +94,11 @@ _G.packer_plugins = {
     path = "/Users/cjh/.local/share/nvim/site/pack/packer/start/auto-pairs",
     url = "https://github.com/jiangmiao/auto-pairs"
   },
+  ["avante.nvim"] = {
+    loaded = true,
+    path = "/Users/cjh/.local/share/nvim/site/pack/packer/start/avante.nvim",
+    url = "https://github.com/yetone/avante.nvim"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/Users/cjh/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -186,6 +191,11 @@ _G.packer_plugins = {
     path = "/Users/cjh/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
+  ["onedark.nvim"] = {
+    loaded = true,
+    path = "/Users/cjh/.local/share/nvim/site/pack/packer/start/onedark.nvim",
+    url = "https://github.com/navarasu/onedark.nvim"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/Users/cjh/.local/share/nvim/site/pack/packer/start/packer.nvim",
@@ -215,11 +225,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/cjh/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
     url = "https://github.com/akinsho/toggleterm.nvim"
-  },
-  ["tokyonight.nvim"] = {
-    loaded = true,
-    path = "/Users/cjh/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
-    url = "https://github.com/folke/tokyonight.nvim"
   },
   ["vim-maximizer"] = {
     loaded = true,
