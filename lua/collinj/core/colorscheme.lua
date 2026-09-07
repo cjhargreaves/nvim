@@ -6,7 +6,7 @@ if not status then
 end
 
 onedark.setup({
-  style="dark",
+  style = "dark",
 })
 
 onedark.load()

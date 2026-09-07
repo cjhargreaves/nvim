@@ -1,3 +1,5 @@
+vim.env.PATH = vim.env.HOME .. "/go/bin:" .. vim.env.PATH
+
 -- boostrap
 require("collinj.plugins-setup")
 
@@ -17,5 +19,5 @@ require("collinj.plugins.lsp.lspsaga")
 require("collinj.plugins.lsp.lspconfig")
 require("collinj.plugins.treesitter")
 require("collinj.plugins.toggleterm")
-require("collinj.plugins.avante")
+require("collinj.plugins.conform")
 

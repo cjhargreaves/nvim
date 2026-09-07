@@ -37,7 +37,6 @@ return packer.startup(function(use)
   use("szw/vim-maximizer") -- maximizes and restores windows
 
   use("tpope/vim-surround")
-  use("vim-scripts/ReplaceWithRegister")
 
   -- commenting
   use("numToStr/Comment.nvim")
@@ -105,19 +104,8 @@ return packer.startup(function(use)
   -- terminal toggle
   use("akinsho/toggleterm.nvim")
 
+  -- formatting
+  use("stevearc/conform.nvim")
 
-  -- avante
-  use({
-    "yetone/avante.nvim",
-    requires = {
-      "nvim-treesitter/nvim-treesitter",
-      "stevearc/dressing.nvim",
-      "nvim-lua/plenary.nvim",
-      "MunifTanjim/nui.nvim",
-    },
-    run = "make",  -- build native bits
-  })
-
-  use 'MeanderingProgrammer/render-markdown.nvim'
 
 end)

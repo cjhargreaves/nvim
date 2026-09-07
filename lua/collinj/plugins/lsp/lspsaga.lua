@@ -5,6 +5,10 @@ if not saga_status then
 end
 
 saga.setup({
+  -- disable the code-action lightbulb that follows the cursor
+  lightbulb = {
+    enable = false,
+  },
   -- keybinds for navigation in lspsaga window
   scroll_preview = { scroll_down = "<C-f>", scroll_up = "<C-b>" },
   -- use enter to open file with definition preview

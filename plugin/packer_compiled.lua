@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/Users/cjh/.cache/nvim/packer_hererocks/2.1.1753364724/share/lua/5.1/?.lua;/Users/cjh/.cache/nvim/packer_hererocks/2.1.1753364724/share/lua/5.1/?/init.lua;/Users/cjh/.cache/nvim/packer_hererocks/2.1.1753364724/lib/luarocks/rocks-5.1/?.lua;/Users/cjh/.cache/nvim/packer_hererocks/2.1.1753364724/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/Users/cjh/.cache/nvim/packer_hererocks/2.1.1753364724/lib/lua/5.1/?.so"
+local package_path_str = "/Users/cjh/.cache/nvim/packer_hererocks/2.1.1785763465/share/lua/5.1/?.lua;/Users/cjh/.cache/nvim/packer_hererocks/2.1.1785763465/share/lua/5.1/?/init.lua;/Users/cjh/.cache/nvim/packer_hererocks/2.1.1785763465/lib/luarocks/rocks-5.1/?.lua;/Users/cjh/.cache/nvim/packer_hererocks/2.1.1785763465/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/Users/cjh/.cache/nvim/packer_hererocks/2.1.1785763465/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -84,20 +84,10 @@ _G.packer_plugins = {
     path = "/Users/cjh/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
-  ReplaceWithRegister = {
-    loaded = true,
-    path = "/Users/cjh/.local/share/nvim/site/pack/packer/start/ReplaceWithRegister",
-    url = "https://github.com/vim-scripts/ReplaceWithRegister"
-  },
   ["auto-pairs"] = {
     loaded = true,
     path = "/Users/cjh/.local/share/nvim/site/pack/packer/start/auto-pairs",
     url = "https://github.com/jiangmiao/auto-pairs"
-  },
-  ["avante.nvim"] = {
-    loaded = true,
-    path = "/Users/cjh/.local/share/nvim/site/pack/packer/start/avante.nvim",
-    url = "https://github.com/yetone/avante.nvim"
   },
   ["cmp-buffer"] = {
     loaded = true,
@@ -119,10 +109,10 @@ _G.packer_plugins = {
     path = "/Users/cjh/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
-  ["dressing.nvim"] = {
+  ["conform.nvim"] = {
     loaded = true,
-    path = "/Users/cjh/.local/share/nvim/site/pack/packer/start/dressing.nvim",
-    url = "https://github.com/stevearc/dressing.nvim"
+    path = "/Users/cjh/.local/share/nvim/site/pack/packer/start/conform.nvim",
+    url = "https://github.com/stevearc/conform.nvim"
   },
   ["friendly-snippets"] = {
     loaded = true,
@@ -206,10 +196,10 @@ _G.packer_plugins = {
     path = "/Users/cjh/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
-  ["render-markdown.nvim"] = {
+  ["remote-nvim.nvim"] = {
     loaded = true,
-    path = "/Users/cjh/.local/share/nvim/site/pack/packer/start/render-markdown.nvim",
-    url = "https://github.com/MeanderingProgrammer/render-markdown.nvim"
+    path = "/Users/cjh/.local/share/nvim/site/pack/packer/start/remote-nvim.nvim",
+    url = "https://github.com/amitds1997/remote-nvim.nvim"
   },
   ["telescope-fzf-native.nvim"] = {
     loaded = true,

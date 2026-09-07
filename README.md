@@ -1,20 +1,43 @@
-## My Nvim config
+# My Neovim Configuration
 
-### Requirements
+A clean, fast Neovim setup focused on development with LSP support, fuzzy finding, and a modern editing experience.
 
-Nvim - version < 0.10 <br>
-Nerdfonts - for dev icons <br>
+## Color Scheme
 
-### How to install
+[OneDark](https://github.com/navarasu/onedark.nvim) (dark style)
 
-backup your old config, or delete it, <br>
-move into config directory and clone git repo <br>
-`cd .config` <br>
-`git clone git@github.com:CollinJH/nvim.git` <br> <br>
+## Features
 
-run nvim now and Sync packages <br>
-`nvim` <br>
-`:PackerSync` <br>
+- **LSP** — Language server support via Mason + nvim-lspconfig for C/C++, Java, Python, Lua, TypeScript, Rust, Go, SQL, YAML, JSON, and Bash
+- **Autocompletion** — nvim-cmp with buffer, path, LSP, and snippet sources
+- **Fuzzy Finder** — Telescope with fzf-native for fast file/grep searching
+- **File Explorer** — nvim-tree with devicons
+- **Treesitter** — Syntax highlighting via `vim.treesitter.start()` with auto-close tags
+- **Lspsaga** — Enhanced LSP UI for code actions, definitions, diagnostics, and rename
+- **Statusline** — lualine
+- **Terminal** — Toggleterm for integrated terminal
+- **Editing** — Comment.nvim, vim-surround, auto-pairs
+- **Navigation** — vim-tmux-navigator, vim-maximizer
 
-nvim will sync all the plugins now and should immediately work. <br>
+## Requirements
 
+- Neovim >= 0.12
+- A [Nerd Font](https://www.nerdfonts.com/) for devicons
+- `tree-sitter` CLI (`cargo install tree-sitter-cli`)
+- `gopls` installed manually (`go install golang.org/x/tools/gopls@latest`)
+
+## Installation
+
+```bash
+cd ~/.config
+git clone git@github.com:cjhargreaves/nvim.git
+nvim
+```
+
+Then run `:PackerSync` inside Neovim to install all plugins.
+
+## Notes
+
+- **gopls** is not managed by Mason — install it manually and ensure `~/go/bin` is in your PATH.
+- **Treesitter** highlighting is started explicitly via autocommands since the newer nvim-treesitter plugin no longer uses the `configs` module.
+- To install new treesitter parsers: `:TSInstall <language>`

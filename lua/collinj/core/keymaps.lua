@@ -28,7 +28,13 @@ keymap.set("n", "<leader>sm", ":MaximizerToggle<CR>")
 -- nvim tree
 keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>")
 
--- telescope
+-- telescope  (leader = Space)
+--   <leader>ff  find files by name
+--   <leader>fs  live grep (search file contents)
+--   <leader>fc  grep word under cursor
+--   <leader>fb  switch open buffers
+--   <leader>fh  search help docs
+-- in the picker: C-j/C-k move, Enter open, C-v/C-x split, C-t tab, C-q -> quickfix
 keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>")
 keymap.set("n", "<leader>fs", "<cmd>Telescope live_grep<cr>")
 keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>")

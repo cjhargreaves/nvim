@@ -20,6 +20,13 @@ mason_lspconfig.setup({
     "lua_ls",
     "clangd",
     "jdtls",
+    "ts_ls",
+    "rust_analyzer",
+    "pyright",
+    "bashls",
+    "jsonls",
+    "yamlls",
+    "sqlls",
   },
   -- auto-install configured servers (with lspconfig)
   automatic_installation = true, -- not the same as ensure_installed
